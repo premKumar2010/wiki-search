@@ -4,6 +4,10 @@
 	box-sizing : border-box;
 }
 
+body {
+	background-color : #EDDE5766;
+}
+
 header {
 	background-color : #FF5722;
 	height           : 8vh;
@@ -12,4 +16,52 @@ header {
 	position         : sticky;
 	z-index          : 10;
 	color            : white;
+}
+
+section.class-container {
+	background-color : #FF5722;
+	position         : relative;
+	top              : 7vh;
+	width            : 70vw;
+	height           : 15vh;
+	left             : 15vw;
+	border-color     : white;
+	border-style     : double;
+	border-width     : thick;
+}
+
+input[type="text"] {
+	border-style  : none;
+	width         : 25vw;
+	height        : 6vh;
+	border-radius : 5px;
+	position      : relative;
+	top           : 25%;
+	left          : 26%;
+}
+
+input[type="text"]:focus-visible {
+	outline-color : #FF5722;
+}
+
+button {
+	position: absolute;
+	top: 26%;
+	left: 65%;
+	width: 5vw;
+	height: 6vh;
+	border-radius: 50%;
+	border-style: none;
+	cursor: pointer;
+}
+
+.no-records {
+	position: relative;
+	top: 32vh;
+	left: 39%;
+	width: 35%;
+	height: 15%;
+	font-size: xxx-large;
+	font-style: oblique;
+	font-weight: 700;
 }
