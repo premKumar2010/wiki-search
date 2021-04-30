@@ -13,21 +13,23 @@ header {
 	height           : 8vh;
 	font-size        : 7vh;
 	padding-left     : 7px;
-	position         : sticky;
-	z-index          : 10;
+	position         : fixed;
+	z-index          : 1;
 	color            : white;
+	width            : 100vw;
 }
 
 section.class-container {
 	background-color : #FF5722;
-	position         : relative;
-	top              : 7vh;
+	position         : sticky;
+	top              : 8vh;
 	width            : 70vw;
 	height           : 15vh;
 	left             : 15vw;
 	border-color     : white;
 	border-style     : double;
 	border-width     : thick;
+	z-index          : 1;
 }
 
 input[type="text"] {
@@ -45,23 +47,36 @@ input[type="text"]:focus-visible {
 }
 
 button {
-	position: absolute;
-	top: 26%;
-	left: 65%;
-	width: 5vw;
-	height: 6vh;
-	border-radius: 50%;
-	border-style: none;
-	cursor: pointer;
+	position      : absolute;
+	top           : 26%;
+	left          : 65%;
+	width         : 5vw;
+	height        : 6vh;
+	border-radius : 50%;
+	border-style  : none;
+	cursor        : pointer;
 }
 
 .no-records {
-	position: relative;
-	top: 32vh;
-	left: 39%;
-	width: 35%;
-	height: 15%;
-	font-size: xxx-large;
-	font-style: oblique;
-	font-weight: 700;
+	position    : relative;
+	top         : 32vh;
+	left        : 39%;
+	width       : 35%;
+	height      : 15%;
+	font-size   : xxx-large;
+	font-style  : oblique;
+	font-weight : 700;
+}
+
+section:nth-of-type(2) {
+	position   : relative;
+	left       : 25%;
+	margin-top : 5%;
+}
+
+article {
+	border-color : red;
+	border-style : double;
+	width        : 50%;
+	margin       : 5px;
 }
